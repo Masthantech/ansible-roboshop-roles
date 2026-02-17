@@ -19,7 +19,7 @@
     state: present
 
 - name: connect to mongodb server to check data is loaded or not
-  ansible.builtin.command: mongosh --host catalogue.shaik.fun --eval 'db.getMongo().getDBNames().indexOf("catalogue")'   
+  ansible.builtin.command: mongosh --host mongodb.shaik.fun --eval 'db.getMongo().getDBNames().indexOf("catalogue")'   
   register: catalogue_output
 
 - name: print he catalogue output
