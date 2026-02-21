@@ -34,6 +34,7 @@
   ansible.builtin.unarchive:
     src: /tmp/frontend.zip
     dest: /usr/share/nginx/html  
+    remote_src: yes
 
 # we have our custom nginx configuration. So we need to remove the old config and replace it with our custom config.
 # we remove the current config file and copy new config in same path
